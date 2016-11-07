@@ -8,10 +8,14 @@
 
   &__content {
     position: absolute;
-    top: 76px;
+    top: 50px;
     text-align: center;
     padding: 20px;
     width: 100%;
+
+    @include breakpoint(w480) {
+      top: 120px;
+    }
 
     @include breakpoint(w768) {
       top: 200px;
