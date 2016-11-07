@@ -1,0 +1,14 @@
+.experience {
+  background: linear-gradient(-25deg, #166699 0%, #00aac9 100%);
+
+  &__content {
+
+    > h2 {
+      padding: 20px;
+      margin: 0;
+      width: 100%;
+      background-color: #eff0f1;
+    }
+
+  }
+}

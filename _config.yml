@@ -1,0 +1,15 @@
+# Site settings
+title: thegarg
+description: personal website of georg hemprich
+baseurl: ""
+url: http://thegarg.de
+
+
+# Build settings
+exclude: [CNAME, Gemfile, Gemfile.lock]
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown
+
+sass:
+  sass_dir: _sass

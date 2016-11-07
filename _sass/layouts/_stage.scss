@@ -1,0 +1,55 @@
+// stage section
+.stage {
+
+  height: calc(100vh - 50px);
+
+  &__content {
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+
+    img {
+      padding: 3px;
+      border: 1px solid rgba(255, 255, 255, .3);
+      border-radius: 50%;
+    }
+
+    h2 {
+      line-height: 1.5em;
+      margin: 0 0 16px 0;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 32px;
+        background: #000;
+        transform: translateY(-6px);
+        margin: 0 10px 0 0;
+      }
+    }
+
+    strong {
+      display: block;
+      text-transform: uppercase;
+      font-size: 1.6em;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  &__canvas {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-25deg, #7aeaaf, #029eff);
+  }
+}

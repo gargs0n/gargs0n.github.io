@@ -1,0 +1,34 @@
+{% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+{% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+{% capture image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+{% capture canonical_url %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/atom.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ "/assets/img/apple-touch-icon-57x57.png" | prepend: site.baseurl }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ "/assets/img/apple-touch-icon-114x114.png" | prepend: site.baseurl }}"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ "/assets/img/apple-touch-icon-72x72.png" | prepend: site.baseurl }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/assets/img/apple-touch-icon-144x144.png" | prepend: site.baseurl }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ "/assets/img/apple-touch-icon-120x120.png" | prepend: site.baseurl }}" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ "/assets/img/apple-touch-icon-152x152.png" | prepend: site.baseurl }}" />
+  <link rel="icon" type="image/png" href="{{ "/assets/img/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ "/assets/img/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <meta name="application-name" content="thegarg"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:image" content="{{ image }}" />
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+</head>

@@ -1,0 +1,12 @@
+.footer {
+  background: #000;
+  color: #fff;
+
+  &__content {
+    padding: 20px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+}

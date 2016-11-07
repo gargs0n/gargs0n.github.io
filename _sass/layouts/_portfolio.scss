@@ -1,0 +1,58 @@
+.portfolio {
+
+  background-color: #f2f3f4;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  > p {
+    padding: 20px;
+    margin: 0;
+  }
+
+  article {
+
+    padding: 20px;
+    flex-grow: 1;
+    border-top: 1px solid #fff;
+
+    @include breakpoint(w768) {
+      width: 50%;
+
+      &:nth-child(odd) {
+        border-right: 1px solid #fff;
+      }
+    }
+
+    @include breakpoint(w1280) {
+      width: 25%;
+      border-right: 1px solid #fff;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    h4 {
+      margin: 10px 0 5px 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    li {
+      font-size: 14px;
+    }
+
+    p {
+      margin: 10px 0 0 0;
+      line-height: 18px;
+    }
+  }
+}

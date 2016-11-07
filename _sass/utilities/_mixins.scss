@@ -1,0 +1,34 @@
+// breakpoint mixin
+@mixin breakpoint($breakpoint) {
+  @if (map-has-key($breakpoints, $breakpoint)) {
+    @if (map-has-key(map-get($breakpoints, $breakpoint), min-height)) {
+      @media (min-height: map-get(map-get($breakpoints, $breakpoint), min-height)){
+        @media (min-width: map-get(map-get($breakpoints, $breakpoint), width)) {
+          @content;
+        }
+      }
+    }
+    @else {
+      @media (min-width: map-get(map-get($breakpoints, $breakpoint), width)) {
+        @content;
+      }
+    }
+  }
+  @else {
+    @warn "Breakpoint: " + $breakpoint + " is not defined";
+  }
+}
+
+@mixin prefix($prop, $val) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '' {
+    #{$prefix}#{$prop}: $val;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
