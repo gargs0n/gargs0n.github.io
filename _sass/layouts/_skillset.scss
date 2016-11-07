@@ -1,7 +1,9 @@
 // skillset section
 .skillset {
 
+  position: relative;
   margin-top: -50px;
+  z-index:2;
 
   article {
 
