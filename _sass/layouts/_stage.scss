@@ -1,7 +1,9 @@
 // stage section
 .stage {
 
-  height: calc(100vh - 50px);
+  //height: calc(100vh - 50px);
+
+  @include viewport-unit(height, 100vh);
 
   &__content {
     position: absolute;
