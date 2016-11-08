@@ -10,6 +10,7 @@ exclude: [CNAME, Gemfile, Gemfile.lock]
 markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown
-
 sass:
   sass_dir: _sass
+  style: compressed
+exclude: ['node_modules']
