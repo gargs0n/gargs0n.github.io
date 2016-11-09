@@ -6,12 +6,21 @@
   position: relative;
   z-index: 1;
 
+  canvas {
+    display: none;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
   &__content {
     position: absolute;
     top: 50px;
     text-align: center;
     padding: 20px;
     width: 100%;
+    z-index:2;
 
     @include breakpoint(w480) {
       top: 120px;
