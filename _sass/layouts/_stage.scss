@@ -7,7 +7,6 @@
   z-index: 1;
 
   canvas {
-    display: none;
     margin: 0;
     position: absolute;
     z-index: 1;
@@ -74,6 +73,6 @@
   &__canvas {
     height: 100%;
     width: 100%;
-    background: linear-gradient(-25deg, #7aeaaf, #029eff);
+    background: linear-gradient(-25deg, #d97aea, #029eff);
   }
 }

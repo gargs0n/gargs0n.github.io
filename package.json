@@ -1,0 +1,28 @@
+{
+  "name": "gargs0n.github.io",
+  "version": "0.0.1",
+  "description": "website of gargs0n",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gargs0n/gargs0n.github.io.git"
+  },
+  "author": "@gargs0n",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/gargs0n/gargs0n.github.io/issues"
+  },
+  "homepage": "https://gargs0n.github.io",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "chalk": "^1.1.3",
+    "webpack": "^2.1.0-beta.25"
+  },
+  "dependencies": {
+    "raf-loop": "^1.1.3"
+  }
+}

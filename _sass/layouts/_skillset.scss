@@ -11,11 +11,9 @@
     padding: 40px 20px 40px 20px;
     flex-grow: 1;
     background-color: #f2f3f4;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #000;
 
-    &:nth-child(-n+2) {
-      border-top: 0;
-    }
+
 
     &:before {
       content: '';
@@ -31,13 +29,13 @@
       width: 50%;
 
       &:nth-child(odd) {
-        border-right: 1px solid #fff;
+        border-right: 1px solid #000;
       }
     }
 
     @include breakpoint(w1024){
       width: 25%;
-      border-right: 1px solid #fff;
+      border-right: 1px solid #000;
 
       &:last-child {
         border-right: 0;
