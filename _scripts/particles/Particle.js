@@ -27,7 +27,7 @@ class Particle {
       current: {x, y},
       start: {x, y}
     };
-
+    
     this.velocity = {x: 0, y: 0};
     this.direction = Math.random() * Math.PI;
 

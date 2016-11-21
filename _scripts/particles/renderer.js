@@ -7,7 +7,7 @@ function plusOrMinus() {
 
 class Renderer {
 
-  constructor(element, particleSpacing = 80, fps = 1000 / 60) {
+  constructor(element, particleSpacing = 60, fps = 1000 / 60) {
     this.canvas = element;
     this.context = element.getContext('2d');
     this.particleSpacing = particleSpacing;

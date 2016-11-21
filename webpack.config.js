@@ -9,7 +9,7 @@ module.exports = {
   devtool: 'source-map',
 
   entry: {
-    application: `${root('_scripts')}/application.js`
+    application: ['babel-polyfill', `${root('_scripts')}/application.js`]
   },
 
   output: {
