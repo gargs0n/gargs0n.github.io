@@ -70,6 +70,23 @@ p {
 a {
   color: inherit;
   cursor: pointer;
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:active, &:hover {
+    outline: 0;
+  }
+}
+
+img {
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+figure {
+  margin: 0;
 }
 
 em {

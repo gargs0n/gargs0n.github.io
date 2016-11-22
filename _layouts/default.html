@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+  {% include templates/head.html %}
   <body>
-    {% include header.html %}
-
+    {% include templates/header.html %}
     {{ content }}
-
-    {% include footer.html %}
-    <script type="text/javascript" src="{{ '/assets/js/application.js' | prepend: site.baseurl }}"></script>
+    {% include templates/footer.html %}
+    <script type="text/javascript" defer src="{{ '/assets/js/application.js' | prepend: site.baseurl }}"></script>
   </body>
 </html>

@@ -32,7 +32,7 @@ module.exports = {
       }
     ]
   },
-
+  
   resolve: {
     extensions: ['.js', '.ts'],
     modules: [root('_scripts'), "node_modules"]

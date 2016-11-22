@@ -9,11 +9,10 @@
 
     text-align: center;
     padding: 40px 20px 40px 20px;
+    -webkit-flex-grow: 1;
     flex-grow: 1;
     background-color: #f2f3f4;
     border-top: 1px solid #000;
-
-
 
     &:before {
       content: '';
@@ -66,7 +65,10 @@
   }
 
   &__content {
+
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: center;
   }
