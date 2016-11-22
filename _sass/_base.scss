@@ -23,9 +23,14 @@ main {
 
 h1, h2, h3, h4, h5 {
   font-weight: 500;
-  font-family: $base-font-family;
+  font-family: $roboto-font-family;
   -webkit-font-smoothing: antialiased;
   margin: 0;
+  text-indent: -1000em;
+
+  .wf-active & {
+    text-indent: 0;
+  }
 }
 
 h1 {
@@ -59,15 +64,22 @@ h5 {
 }
 
 p {
-  font-family: $base-font-family;
+  font-family: $roboto-font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   -webkit-font-smoothing: antialiased;
   margin-top: 0;
+  text-indent: -1000em;
+
+  .wf-active & {
+    text-indent: 0;
+  }
 }
 
 a {
+  font-family: $roboto-font-family;
+  font-weight: 400;
   color: inherit;
   cursor: pointer;
 
